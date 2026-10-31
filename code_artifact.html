@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إلى زوجتي وحبيبتي ونور عيوني حلا ❤️ | اعتذار رسمي من منار</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cairo, Tajawal, Amiri, Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700;800;900&family=Fira+Code:wght@400;600&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-primary: #1a0b16;
+            --bg-secondary: #2d1226;
+            --accent-main: #f43f5e;
+            --accent-secondary: #fb7185;
+            --accent-glow: rgba(244, 63, 94, 0.45);
+            --text-light: #fff1f2;
+            --card-bg: rgba(45, 18, 38, 0.65);
+            --card-border: rgba(251, 113, 133, 0.3);
+            --gradient-hero: linear-gradient(135deg, #f43f5e 0%, #db2777 50%, #9333ea 100%);
+        }
+
+        /* Theme: Rose Pink (Default) */
+        [data-theme="rose"] {
+            --bg-primary: #1a0913;
+            --bg-secondary: #2e1023;
+            --accent-main: #f43f5e;
+            --accent-secondary: #f9a8d4;
+            --accent-glow: rgba(244, 63, 94, 0.5);
+            --text-light: #fff1f2;
+            --card-bg: rgba(46, 16, 35, 0.7);
+            --card-border: rgba(244, 63, 94, 0.35);
+            --gradient-hero: linear-gradient(135deg, #f43f5e 0%, #ec4899 50%, #be185d 100%);
+        }
+
+        /* Theme: Royal Purple */
+        [data-theme="purple"] {
+            --bg-primary: #110926;
+            --bg-secondary: #1e1145;
+            --accent-main: #a855f7;
+            --accent-secondary: #d8b4fe;
+            --accent-glow: rgba(168, 85, 247, 0.5);
+            --text-light: #faf5ff;
+            --card-bg: rgba(30, 17, 69, 0.7);
+            --card-border: rgba(168, 85, 247, 0.35);
+            --gradient-hero: linear-gradient(135deg, #a855f7 0%, #7e22ce 50%, #4f46e5 100%);
+        }
+
+        /* Theme: Sunset Gold */
+        [data-theme="gold"] {
+            --bg-primary: #1c1008;
+            --bg-secondary: #331d0e;
+            --accent-main: #f59e0b;
+            --accent-secondary: #fde68a;
+            --accent-glow: rgba(245, 158, 11, 0.5);
+            --text-light: #fffbeb;
+            --card-bg: rgba(51, 29, 14, 0.72);
+            --card-border: rgba(245, 158, 11, 0.38);
+            --gradient-hero: linear-gradient(135deg, #f59e0b 0%, #ea580c 50%, #e11d48 100%);
+        }
+
+        /* Theme: Ocean Breeze */
+        [data-theme="ocean"] {
+            --bg-primary: #071926;
+            --bg-secondary: #0c2b40;
+            --accent-main: #06b6d4;
+            --accent-secondary: #67e8f9;
+            --accent-glow: rgba(6, 182, 212, 0.5);
+            --text-light: #ecfeff;
+            --card-bg: rgba(12, 43, 64, 0.7);
+            --card-border: rgba(6, 182, 212, 0.35);
+            --gradient-hero: linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #6366f1 100%);
+        }
+
+        /* Theme: Emerald Night */
+        [data-theme="emerald"] {
+            --bg-primary: #061c14;
+            --bg-secondary: #0b3324;
+            --accent-main: #10b981;
+            --accent-secondary: #6ee7b7;
+            --accent-glow: rgba(16, 185, 129, 0.5);
+            --text-light: #ecfdf5;
+            --card-bg: rgba(11, 51, 36, 0.7);
+            --card-border: rgba(16, 185, 129, 0.35);
+            --gradient-hero: linear-gradient(135deg, #10b981 0%, #059669 50%, #0d9488 100%);
+        }
+
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-light);
+            overflow-x: hidden;
+            transition: background-color 0.6s ease, color 0.5s ease;
+            margin: 0;
+        }
+
+        .font-amiri {
+            font-family: 'Amiri', serif;
+        }
+
+        .font-code {
+            font-family: 'Fira Code', monospace;
+        }
+
+        /* Background Canvas */
+        #particles-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Glassmorphism Card */
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--card-border);
+            box-shadow: 0 10px 35px -5px rgba(0, 0, 0, 0.45), 0 0 20px var(--accent-glow);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .glass-card:hover {
+            border-color: var(--accent-secondary);
+        }
+
+        /* Theme Gradient Button */
+        .btn-theme {
+            background: var(--gradient-hero);
+            box-shadow: 0 6px 22px var(--accent-glow);
+            transition: all 0.3s ease;
+        }
+
+        .btn-theme:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 30px var(--accent-glow);
+        }
+
+        .btn-theme:active {
+            transform: translateY(0) scale(0.98);
+        }
+
+        /* Floating Animation */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+        }
+
+        .animate-float {
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+
+        /* Heartbeat Animation */
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            15% { transform: scale(1.22); }
+            30% { transform: scale(0.95); }
+            45% { transform: scale(1.15); }
+        }
+
+        .animate-heartbeat {
+            animation: heartbeat 1.8s infinite;
+        }
+
+        /* Breaking News Ticker */
+        @keyframes tickerRTL {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .news-ticker-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: tickerRTL 26s linear infinite;
+        }
+
+        .news-ticker-content:hover {
+            animation-play-state: paused;
+        }
+
+        /* 3D Flip Card for Languages */
+        .flip-card {
+            perspective: 1000px;
+            height: 250px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transform-style: preserve-3d;
+        }
+
+        .flip-card.flipped .flip-card-inner,
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 1.25rem;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flip-card-front {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+        }
+
+        .flip-card-back {
+            background: var(--gradient-hero);
+            color: #ffffff;
+            transform: rotateY(180deg);
+            box-shadow: 0 0 25px var(--accent-glow);
+        }
+
+        /* Royal Scroll Styling */
+        .royal-scroll {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%, #f59e0b 100%);
+            color: #451a03;
+            border: 4px double #78350f;
+            box-shadow: inset 0 0 40px rgba(120, 53, 15, 0.35), 0 15px 35px rgba(0,0,0,0.5);
+            position: relative;
+        }
+
+        /* Wax Seal Animation */
+        @keyframes stampDown {
+            0% { transform: scale(3) rotate(-25deg); opacity: 0; }
+            70% { transform: scale(0.9) rotate(6deg); opacity: 1; }
+            85% { transform: scale(1.05) rotate(-3deg); }
+            100% { transform: scale(1) rotate(0deg); opacity: 1; }
+        }
+
+        .stamp-active {
+            animation: stampDown 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        /* Generator Dynamic Shapes */
+        .shape-rounded {
+            border-radius: 1.75rem;
+        }
+        .shape-pill {
+            border-radius: 9999px;
+            padding-left: 3rem !important;
+            padding-right: 3rem !important;
+        }
+        .shape-royal {
+            border-radius: 3rem 0.5rem 3rem 0.5rem;
+            border-width: 3px;
+        }
+        .shape-cloud {
+            border-radius: 40px 80px 40px 80px / 70px 40px 70px 40px;
+        }
+        .shape-octagon {
+            clip-path: polygon(6% 0%, 94% 0%, 100% 20%, 100% 80%, 94% 100%, 6% 100%, 0% 80%, 0% 20%);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-main);
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body data-theme="rose" class="min-h-screen relative selection:bg-pink-500 selection:text-white">
+
+    <!-- Floating Background Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Sticky Color & Mood Bar ("بكل الألوان") -->
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-black/40 border-b border-white/10 px-3 py-2.5">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+            <!-- Brand / Dedication -->
+            <div class="flex items-center gap-2.5">
+                <div class="w-10 h-10 rounded-full btn-theme flex items-center justify-center text-white shadow-lg animate-heartbeat">
+                    <i class="fa-solid fa-heart text-lg"></i>
+                </div>
+                <div>
+                    <span class="font-extrabold text-base sm:text-lg tracking-wide block leading-none">حلا ❤️ منار</span>
+                    <span class="text-xs opacity-75">موسوعة الاعتذارات الشاملة</span>
+                </div>
+            </div>
+
+            <!-- Theme Switcher ("غيري لون الموقع على ذوقك يا حلا") -->
+            <div class="flex items-center gap-1.5 sm:gap-2 bg-white/10 px-3 py-1.5 rounded-full border border-white/15">
+                <span class="text-xs font-bold ml-1 hidden md:inline-block">🎨 بكل الألوان:</span>
+                
+                <button onclick="setTheme('rose')" title="وردي رومانسي" class="theme-btn w-7 h-7 rounded-full bg-gradient-to-tr from-rose-600 to-pink-400 border-2 border-white scale-110 transition-transform hover:scale-125 flex items-center justify-center" data-t="rose">
+                    <i class="fa-solid fa-check text-[10px] text-white"></i>
+                </button>
+                <button onclick="setTheme('purple')" title="بنفسجي ملكي" class="theme-btn w-7 h-7 rounded-full bg-gradient-to-tr from-purple-700 to-fuchsia-400 border-2 border-transparent transition-transform hover:scale-125 flex items-center justify-center" data-t="purple"></button>
+                <button onclick="setTheme('gold')" title="ذهبي دافئ" class="theme-btn w-7 h-7 rounded-full bg-gradient-to-tr from-amber-600 to-yellow-300 border-2 border-transparent transition-transform hover:scale-125 flex items-center justify-center" data-t="gold"></button>
+                <button onclick="setTheme('ocean')" title="أزرق سماوي" class="theme-btn w-7 h-7 rounded-full bg-gradient-to-tr from-cyan-600 to-blue-400 border-2 border-transparent transition-transform hover:scale-125 flex items-center justify-center" data-t="ocean"></button>
+                <button onclick="setTheme('emerald')" title="ليل زمردي" class="theme-btn w-7 h-7 rounded-full bg-gradient-to-tr from-emerald-600 to-teal-300 border-2 border-transparent transition-transform hover:scale-125 flex items-center justify-center" data-t="emerald"></button>
+            </div>
+
+            <!-- Quick Nav & Sound Toggle -->
+            <div class="flex items-center gap-2">
+                <a href="#forgive-section" class="text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-full btn-theme text-white flex items-center gap-1.5">
+                    <span>سامحيني</span>
+                    <i class="fa-solid fa-face-kiss-wink-heart"></i>
+                </a>
+                <button id="sound-toggle" onclick="toggleSound()" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center transition" title="تشغيل/كتم النغمات التفاعلية">
+                    <i id="sound-icon" class="fa-solid fa-volume-high text-sm"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pb-24 pt-6 space-y-16">
+
+        <!-- 1. HERO SECTION -->
+        <section class="glass-card rounded-3xl p-6 sm:p-10 md:p-12 text-center relative overflow-hidden">
+            <!-- Decorative Corner Glows -->
+            <div class="absolute -top-20 -right-20 w-56 h-56 rounded-full opacity-25 blur-3xl pointer-events-none" style="background: var(--accent-main);"></div>
+            <div class="absolute -bottom-20 -left-20 w-56 h-56 rounded-full opacity-25 blur-3xl pointer-events-none" style="background: var(--accent-secondary);"></div>
+
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs sm:text-sm font-bold mb-6 animate-float">
+                <span class="text-amber-300"><i class="fa-solid fa-crown"></i></span>
+                <span>مُهدى خصيصاً لأغلى إنسانة في الكون</span>
+                <span class="text-amber-300"><i class="fa-solid fa-sparkles"></i></span>
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-black leading-tight mb-4">
+                إلى زوجتي وحبيبتي ونور عيوني..
+                <span class="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-white via-pink-200 to-amber-200 drop-shadow-sm">
+                    👑 حـــلا ❤️
+                </span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-base sm:text-xl opacity-90 max-w-3xl mx-auto leading-relaxed font-medium mb-8">
+                موسوعة الاعتذارات الرسمية وغير الرسمية، بكل <span class="underline decoration-wavy font-bold">الأساليب والأشكال والألوان واللغات</span> من زوجك المحب <span class="font-extrabold px-2 py-0.5 rounded bg-white/15">منار</span> — لأن زعلك ما يهون عليّ أبداً والدنيا بدون ضحكتك ما تسوى شي!
+            </p>
+
+            <!-- Love & Apology Meter -->
+            <div class="max-w-2xl mx-auto bg-black/35 border border-white/15 rounded-2xl p-5 mb-8">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                    <span class="font-bold text-sm sm:text-base flex items-center gap-2">
+                        <i class="fa-solid fa-heart-pulse text-rose-400 animate-ping"></i>
+                        مقياس الغلاوة والشوق والاعتذار في قلب منار:
+                    </span>
+                    <span id="love-meter-value" class="font-black text-lg sm:text-2xl text-amber-300">1000% 🔥</span>
+                </div>
+                <div class="w-full h-5 bg-white/10 rounded-full overflow-hidden p-0.5 border border-white/20">
+                    <div id="love-meter-bar" class="h-full rounded-full transition-all duration-700 relative overflow-hidden" style="width: 100%; background: var(--gradient-hero);">
+                        <div class="absolute inset-0 bg-white/25 animate-pulse"></div>
+                    </div>
+                </div>
+                <div class="mt-4 flex flex-wrap items-center justify-between gap-3">
+                    <p id="love-meter-note" class="text-xs sm:text-sm opacity-80">تجاوز الحد الطبيعي المسموح به دولياً بسبب حب حلا!</p>
+                    <button onclick="boostLoveMeter()" class="text-xs sm:text-sm font-bold px-4 py-2 rounded-xl btn-theme text-white flex items-center gap-1.5">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>زيدي العيار كمان!</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quick Jump Pills -->
+            <div class="flex flex-wrap justify-center gap-2.5 text-xs sm:text-sm font-bold">
+                <a href="#styles-section" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 transition flex items-center gap-2">
+                    <i class="fa-solid fa-wand-magic-sparkles text-amber-300"></i> بكل الأساليب
+                </a>
+                <a href="#languages-section" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 transition flex items-center gap-2">
+                    <i class="fa-solid fa-earth-americas text-cyan-300"></i> بكل اللغات (12 لغة)
+                </a>
+                <a href="#generator-section" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 transition flex items-center gap-2">
+                    <i class="fa-solid fa-shapes text-pink-300"></i> بكل الأشكال
+                </a>
+                <a href="#coupons-section" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 transition flex items-center gap-2">
+                    <i class="fa-solid fa-ticket text-emerald-300"></i> كوبونات الترضية
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. APOLOGIES IN EVERY STYLE ("بكل الأساليب") -->
+        <section id="styles-section" class="space-y-6">
+            <div class="text-center space-y-2">
+                <span class="px-3.5 py-1 rounded-full bg-white/10 text-xs font-bold border border-white/15">القسم الأول</span>
+                <h2 class="text-2xl sm:text-4xl font-black">اعتذارات بكل الأساليب 🎭💌</h2>
+                <p class="text-sm sm:text-base opacity-80 max-w-xl mx-auto">اختاري الأسلوب اللي يعجبك يا حلا.. شاعري، كوميدي، برمجي، ملكي، أو بكل اللهجات العربية!</p>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-3 bg-black/30 p-2.5 rounded-2xl border border-white/10">
+                <button onclick="switchStyleTab('romantic')" id="tab-btn-romantic" class="style-tab-btn btn-theme text-white px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center gap-2 transition">
+                    <i class="fa-solid fa-feather-pointed"></i> الرومانسي والشاعري
+                </button>
+                <button onclick="switchStyleTab('dramatic')" id="tab-btn-dramatic" class="style-tab-btn bg-white/5 hover:bg-white/15 px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center gap-2 transition">
+                    <i class="fa-solid fa-tv"></i> الدرامي والكوميدي
+                </button>
+                <button onclick="switchStyleTab('coder')" id="tab-btn-coder" class="style-tab-btn bg-white/5 hover:bg-white/15 px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center gap-2 transition">
+                    <i class="fa-solid fa-laptop-code"></i> أسلوب المبرمجين
+                </button>
+                <button onclick="switchStyleTab('royal')" id="tab-btn-royal" class="style-tab-btn bg-white/5 hover:bg-white/15 px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center gap-2 transition">
+                    <i class="fa-solid fa-scroll"></i> المرسوم الملكي
+                </button>
+                <button onclick="switchStyleTab('dialects')" id="tab-btn-dialects" class="style-tab-btn bg-white/5 hover:bg-white/15 px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center gap-2 transition">
+                    <i class="fa-solid fa-comments"></i> بكل اللهجات العربية
+                </button>
+            </div>
+
+            <!-- TAB 1: ROMANTIC & POETIC -->
+            <div id="tab-content-romantic" class="style-tab-content grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Poetic Card -->
+                <div class="glass-card rounded-3xl p-6 flex flex-col justify-between relative overflow-hidden">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl btn-theme flex items-center justify-center text-white text-xl mb-4">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold mb-3 text-amber-200">قصيدة في عيون حلا</h3>
+                        <div class="font-amiri text-xl leading-loose bg-black/25 p-4 rounded-2xl border border-white/10 text-center space-y-2">
+                            <p>"يا حَلا الرُّوحِ، ما لِقَلبي سِواكِ</p>
+                            <p>إن تَبَسَّمتِ أشرَقَت دُنياكِ</p>
+                            <p>إِن هَفَونا فَالصفحُ طَبعُ الغَوالي</p>
+                            <p>وَأنا العاشِقُ الذي يَفداكِ"</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs opacity-80">
+                        <span>بقلم: قلب منار</span>
+                        <span>❤️ لنور عيوني حلا</span>
+                    </div>
+                </div>
+
+                <!-- Heartfelt Letter Card -->
+                <div class="glass-card rounded-3xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl btn-theme flex items-center justify-center text-white text-xl mb-4">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold mb-3 text-pink-200">رسالة من أعماق القلب</h3>
+                        <p class="text-sm sm:text-base leading-relaxed opacity-95">
+                            حبيبتي وزوجتي ونور عيوني <strong class="text-amber-300">حلا</strong>.. 
+                            أعتذر منكِ بعدد نبضات قلبي التي لا تنبض إلا باسمك. أنتِ لستِ فقط زوجتي، أنتِ أماني، وراحتي، وضحكة أيامي. لو كان بيدي لجمعت كل ورود الدنيا ووضعتها بين يديكِ حتى أرى ابتسامتكِ الجميلة تعود لوجهكِ القمري. حقك عليّ يا أغلى ما أملك.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs opacity-80">
+                        <span>الحالة: شوق لا ينتهي</span>
+                        <span>🌹 100% حب صادق</span>
+                    </div>
+                </div>
+
+                <!-- Interactive Envelope Surprise -->
+                <div class="glass-card rounded-3xl p-6 flex flex-col justify-between text-center">
+                    <div>
+                        <div class="w-12 h-12 mx-auto rounded-2xl btn-theme flex items-center justify-center text-white text-xl mb-4">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold mb-2 text-amber-200">همسة سرية لحلا</h3>
+                        <p class="text-xs opacity-75 mb-4">اضغطي على الظرف لفتح الرسالة الخاصة بكِ</p>
+                        
+                        <div id="secret-envelope" onclick="openSecretEnvelope()" class="cursor-pointer bg-gradient-to-br from-white/15 to-white/5 hover:from-white/25 hover:to-white/10 border-2 border-dashed border-white/30 rounded-2xl p-6 transition-all">
+                            <div id="envelope-closed" class="space-y-2">
+                                <i class="fa-solid fa-envelope text-5xl text-amber-300 animate-bounce"></i>
+                                <p class="font-bold text-sm">اضغطي هنا لفتح الظرف 💌</p>
+                            </div>
+                            <div id="envelope-opened" class="hidden space-y-2">
+                                <i class="fa-solid fa-heart-circle-check text-4xl text-rose-400"></i>
+                                <p class="font-bold text-sm sm:text-base text-amber-200 leading-relaxed">
+                                    "لو عاد بي الزمن ألف مرة، سأختاركِ أنتِ يا حلا في كل مرة.. آسف يا روح منار ونور عيونه!"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-xs opacity-70 mt-4">✨ سر خاص بين منار وحلا</p>
+                </div>
+            </div>
+
+            <!-- TAB 2: DRAMATIC & COMEDY -->
+            <div id="tab-content-dramatic" class="style-tab-content hidden space-y-6">
+                <!-- Live Breaking News Ticker -->
+                <div class="bg-red-950/90 border-2 border-red-500 rounded-2xl overflow-hidden shadow-lg">
+                    <div class="flex items-center">
+                        <div class="bg-red-600 text-white font-black px-4 py-3 text-xs sm:text-sm shrink-0 flex items-center gap-2 z-10">
+                            <span class="w-2.5 h-2.5 rounded-full bg-white animate-ping"></span>
+                            <span>خبر عاجل</span>
+                        </div>
+                        <div class="overflow-hidden w-full py-2.5 px-4 text-sm sm:text-base font-bold text-red-100">
+                            <div class="news-ticker-content">
+                                🚨 عاجل: توقف الكوكب عن الدوران مؤقتاً حتى تبتسم حلا! &nbsp;&nbsp;•&nbsp;&nbsp; 🌍 وكالة ناسا الفضائية: رصد انخفاض حاد في إضاءة القمر بسبب زعل "حلا" من "منار"! &nbsp;&nbsp;•&nbsp;&nbsp; 📢 الأمم المتحدة تعقد جلسة طارئة وتطالب حلا بقبول الاعتذار فوراً لإعادة الحياة لطبيعتها! &nbsp;&nbsp;•&nbsp;&nbsp; ❤️ منار يعلن استسلامه الكامل ويرفع الراية البيضاء لعيون حلا!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Weather Forecast Widget -->
+                    <div class="glass-card rounded-3xl p-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg sm:text-xl font-extrabold flex items-center gap-2">
+                                <i class="fa-solid fa-cloud-sun-rain text-amber-300"></i>
+                                حالة طقس قلب منار اليوم
+                            </h3>
+                            <span id="weather-badge" class="px-3 py-1 rounded-full bg-blue-500/30 border border-blue-400/40 text-xs font-bold">بدون رضا حلا 🌧️</span>
+                        </div>
+
+                        <div id="weather-box" class="bg-black/30 rounded-2xl p-5 border border-white/10 text-center space-y-3 transition-all">
+                            <div id="weather-icon" class="text-5xl">⛈️🥶</div>
+                            <h4 id="weather-temp" class="text-2xl font-black text-cyan-300">-50° تحت الصفر</h4>
+                            <p id="weather-desc" class="text-sm opacity-90 leading-relaxed">
+                                غائم كلياً، عواصف شوق عاتية، وأمطار غزيرة من الندم.. ولا يمكن أن تشرق الشمس إلا بابتسامة واحدة من ثغر <strong class="text-amber-300">حلا</strong>!
+                            </p>
+                        </div>
+
+                        <button onclick="toggleWeatherMood()" class="w-full py-3 rounded-xl btn-theme text-white font-bold text-sm flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-sun"></i>
+                            <span id="weather-btn-text">اضغطي هنا لترين الطقس لما تبتسمين يا حلا ☀️</span>
+                        </button>
+                    </div>
+
+                    <!-- Emergency Medical Report -->
+                    <div class="glass-card rounded-3xl p-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg sm:text-xl font-extrabold flex items-center gap-2">
+                                <i class="fa-solid fa-stethoscope text-rose-400"></i>
+                                تقرير طبي عاجل (مستشفى العشاق)
+                            </h3>
+                            <span class="px-3 py-1 rounded-full bg-rose-500/30 border border-rose-400/40 text-xs font-bold">حالة طارئة 🚑</span>
+                        </div>
+
+                        <div class="bg-black/30 rounded-2xl p-4 border border-white/10 space-y-2.5 text-sm">
+                            <div class="flex justify-between border-b border-white/10 pb-2">
+                                <span class="opacity-75">اسم المريض:</span>
+                                <span class="font-bold">منار (عاشق حلا)</span>
+                            </div>
+                            <div class="flex justify-between border-b border-white/10 pb-2">
+                                <span class="opacity-75">التشخيص الطبي:</span>
+                                <span class="font-bold text-rose-300">نقص حاد جداً في فيتامين (ضحكة حلا)</span>
+                            </div>
+                            <div class="flex justify-between border-b border-white/10 pb-2">
+                                <span class="opacity-75">الأعراض الجانبية:</span>
+                                <span class="font-bold">شرود ذهني، تفكير مستمر، وشوق 24 ساعة</span>
+                            </div>
+                            <div class="pt-1">
+                                <span class="opacity-75 block mb-1">العلاج الوحيد الموصى به:</span>
+                                <p class="font-extrabold text-amber-300 bg-white/5 p-2.5 rounded-xl border border-white/10">
+                                    💊 كلمة "سامحتك يا منار" + ابتسامة حلوة من نور عيونه حلا فوراً!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 3: PROGRAMMER / CODER STYLE -->
+            <div id="tab-content-coder" class="style-tab-content hidden">
+                <div class="bg-slate-950 border-2 border-slate-700 rounded-3xl overflow-hidden shadow-2xl max-w-3xl mx-auto">
+                    <!-- Terminal Top Bar -->
+                    <div class="bg-slate-900 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="w-3.5 h-3.5 rounded-full bg-rose-500"></span>
+                            <span class="w-3.5 h-3.5 rounded-full bg-amber-400"></span>
+                            <span class="w-3.5 h-3.5 rounded-full bg-emerald-500"></span>
+                            <span class="text-xs font-code text-slate-400 mr-2">manar_heart_server — bash — hala_love.js</span>
+                        </div>
+                        <span id="terminal-status-badge" class="px-2.5 py-0.5 rounded text-xs font-code bg-rose-500/20 text-rose-400 border border-rose-500/30">
+                            ERROR 404
+                        </span>
+                    </div>
+
+                    <!-- Terminal Body -->
+                    <div class="p-6 space-y-5">
+                        <div id="terminal-output" dir="ltr" class="font-code text-xs sm:text-sm space-y-2 text-left bg-black/60 p-4 rounded-2xl border border-slate-800 min-h-[190px]">
+                            <p class="text-rose-400 font-bold">❌ [CRITICAL ERROR 404]: Hala's_Smile_Not_Found!</p>
+                            <p class="text-amber-300">⚠️ Warning: Manar's happiness module cannot run without Hala.</p>
+                            <p class="text-slate-400">&gt; Analyzing root cause... Husband missed a detail.</p>
+                            <p class="text-cyan-300">&gt; Ready to deploy patch: <span class="underline">Infinite_Apology_v1000.exe</span></p>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                            <p class="text-xs sm:text-sm text-slate-300">
+                                💻 اضغطي على الزر البرمجي لتشغيل كود الاعتذار وإصلاح السيستم يا حلا:
+                            </p>
+                            <button onclick="runApologyCode()" id="run-code-btn" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30 transition">
+                                <i class="fa-solid fa-play"></i>
+                                <span>تشغيل كود الاعتذار وإصلاح الخطأ</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 4: ROYAL DECREE SCROLL -->
+            <div id="tab-content-royal" class="style-tab-content hidden">
+                <div class="royal-scroll rounded-3xl p-6 sm:p-10 max-w-3xl mx-auto text-center space-y-6">
+                    <div class="flex justify-center items-center gap-3 text-amber-900">
+                        <i class="fa-solid fa-crown text-2xl sm:text-3xl"></i>
+                        <span class="text-xs sm:text-sm font-black tracking-widest uppercase border-y-2 border-amber-900/40 py-1 px-4">مملكة القلب المتحدة — الديوان الملكي</span>
+                        <i class="fa-solid fa-crown text-2xl sm:text-3xl"></i>
+                    </div>
+
+                    <h3 class="font-amiri text-3xl sm:text-5xl font-bold text-amber-950">
+                        مرسوم ملكي ووثيقة تعهد رسمية
+                    </h3>
+
+                    <div class="font-amiri text-xl sm:text-2xl leading-relaxed text-amber-950 space-y-3 max-w-2xl mx-auto bg-white/40 p-6 rounded-2xl border border-amber-900/20">
+                        <p>
+                            أقرّ أنا الموقع أدناه، الزوج المحب والعاشق الولهان <strong>« منار »</strong>، بكامل قواي العقلية والقلبية، أن زوجتي وحبيبتي ونور عيوني <strong>« الملكة حلا »</strong> هي سيدة هذا القلب وأميرته المتوجة دون منازع.
+                        </p>
+                        <p>
+                            وأتعهد بموجب هذا المرسوم الملكي السامي بأن أقدم أسمى آيات الاعتذار والود، وأن يكون رضاها وابتسامتها هما القانون الأول والأخير في مملكتنا السعيدة، وأن أعوضها بكل حب ودلال وسعادة.
+                        </p>
+                    </div>
+
+                    <!-- Signatures & Interactive Wax Stamp -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 items-center gap-6 pt-4 border-t-2 border-amber-900/20">
+                        <div class="text-center">
+                            <span class="text-xs font-bold opacity-75 block">توقيع الزوج المحب:</span>
+                            <span class="font-amiri text-2xl font-bold text-amber-950">منار العاشق لحلا ✍️</span>
+                        </div>
+
+                        <!-- Stamp Area -->
+                        <div class="flex flex-col items-center justify-center">
+                            <div id="royal-stamp-box" class="hidden w-28 h-28 rounded-full bg-gradient-to-br from-red-700 via-rose-600 to-red-900 border-4 border-amber-300 shadow-xl flex flex-col items-center justify-center text-white p-2">
+                                <i class="fa-solid fa-heart text-amber-300 text-xl"></i>
+                                <span class="text-[11px] font-black leading-tight mt-1">معتمد ومختوم<br>لعيون الملكة حلا</span>
+                            </div>
+                            <button id="stamp-btn" onclick="applyRoyalStamp()" class="px-5 py-3 rounded-xl bg-amber-900 hover:bg-amber-800 text-amber-100 font-bold text-sm shadow-lg flex items-center gap-2 transition">
+                                <i class="fa-solid fa-stamp"></i>
+                                <span>اضغطي لختم الموافقة الملكية 👑</span>
+                            </button>
+                        </div>
+
+                        <div class="text-center">
+                            <span class="text-xs font-bold opacity-75 block">المستفيدة الوحيدة:</span>
+                            <span class="font-amiri text-2xl font-bold text-amber-950">نور عيوني حلا ❤️</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 5: ARABIC DIALECTS -->
+            <div id="tab-content-dialects" class="style-tab-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Syrian / Levantine -->
+                <div class="glass-card rounded-2xl p-5 space-y-3 border-r-4 border-r-rose-400">
+                    <div class="flex items-center justify-between">
+                        <span class="font-black text-base text-amber-300">🌿 اللهجة السورية / الشامية</span>
+                        <span class="text-xs bg-white/10 px-2.5 py-1 rounded-full">دلال شامي</span>
+                    </div>
+                    <p class="text-sm sm:text-base leading-relaxed">
+                        "يا تقبريني يا حلا، ما عاش ولا كان اللي يزعلك يا روحي! حقك ع راسي من فوق، تكرم عينك وعيونك الحلوين.. ضحكيلي بقى دخيل قلبك ما أحلاكِ!"
+                    </p>
+                </div>
+
+                <!-- Gulf -->
+                <div class="glass-card rounded-2xl p-5 space-y-3 border-r-4 border-r-amber-400">
+                    <div class="flex items-center justify-between">
+                        <span class="font-black text-base text-amber-300">🦅 اللهجة الخليجية</span>
+                        <span class="text-xs bg-white/10 px-2.5 py-1 rounded-full">فخامة وغلا</span>
+                    </div>
+                    <p class="text-sm sm:text-base leading-relaxed">
+                        "يا بعد حيي وميتي وطوايفي كلهم يا حلا! جعلني فدوة لعيونك، ابشري باللي يرضيك وما يصير خاطرك إلا طيب يا الغالية، زعلك ما نقوى عليه والله!"
+                    </p>
+                </div>
+
+                <!-- Egyptian -->
+                <div class="glass-card rounded-2xl p-5 space-y-3 border-r-4 border-r-cyan-400">
+                    <div class="flex items-center justify-between">
+                        <span class="font-black text-base text-amber-300">✨ اللهجة المصرية</span>
+                        <span class="text-xs bg-white/10 px-2.5 py-1 rounded-full">خفة دم وحب</span>
+                    </div>
+                    <p class="text-sm sm:text-base leading-relaxed">
+                        "حقك عليا يا ست الكل ويا نور عيني! ده الدنيا من غير ضحكتك يا حلا ملهاش أي طعم ولا لون.. صافي يا لبن؟ قولي حليب يا قشطة وفكي التكشيرة الحلوة دي!"
+                    </p>
+                </div>
+
+                <!-- Lebanese -->
+                <div class="glass-card rounded-2xl p-5 space-y-3 border-r-4 border-r-pink-400">
+                    <div class="flex items-center justify-between">
+                        <span class="font-black text-base text-amber-300">🌸 اللهجة اللبنانية</span>
+                        <span class="text-xs bg-white/10 px-2.5 py-1 rounded-full">رقة ورومانسية</span>
+                    </div>
+                    <p class="text-sm sm:text-base leading-relaxed">
+                        "يؤبرني الزعلان أنا! يا عمري يا حلا شو بحبك، ولا ممكن خلي غيمة زعل تمرق ع عيونك الحلوين.. سوري منك يا نبض قلبي كله!"
+                    </p>
+                </div>
+
+                <!-- Iraqi -->
+                <div class="glass-card rounded-2xl p-5 space-y-3 border-r-4 border-r-purple-400">
+                    <div class="flex items-center justify-between">
+                        <span class="font-black text-base text-amber-300">🌴 اللهجة العراقية</span>
+                        <span class="text-xs bg-white/10 px-2.5 py-1 rounded-full">شجن وحنية</span>
+                    </div>
+                    <p class="text-sm sm:text-base leading-relaxed">
+                        "فدوة أروح لطولج ولعيونج يا حلايتي! يا بعد روحي وعمري، لتزعلين مني، آني بدونج أضيع والله.. تعاي نطيني ضحكة ترد الروح!"
+                    </p>
+                </div>
+
+                <!-- Maghrebi -->
+                <div class="glass-card rounded-2xl p-5 space-y-3 border-r-4 border-r-emerald-400">
+                    <div class="flex items-center justify-between">
+                        <span class="font-black text-base text-amber-300">🍵 اللهجة المغاربية</span>
+                        <span class="text-xs bg-white/10 px-2.5 py-1 rounded-full">محبة خالصة</span>
+                    </div>
+                    <p class="text-sm sm:text-base leading-relaxed">
+                        "سمحي ليا بزاااف يا غزالتي حلا! راكي عزيزة وغالية فقلبي ومكانتك ما يوصلها حد، كنبغيك بزاف يا نور عيني!"
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. APOLOGIES IN EVERY SHAPE & ENDLESS GENERATOR ("بكل الأشكال ومولّد الاعتذارات") -->
+        <section id="generator-section" class="space-y-6">
+            <div class="text-center space-y-2">
+                <span class="px-3.5 py-1 rounded-full bg-white/10 text-xs font-bold border border-white/15">القسم الثاني</span>
+                <h2 class="text-2xl sm:text-4xl font-black">اعتذارات بكل الأشكال والأنواع 💎✨</h2>
+                <p class="text-sm sm:text-base opacity-80 max-w-2xl mx-auto">
+                    اضغطي على الأزرار لتغيير <span class="text-amber-300 font-bold">الشكل الهندسي</span> للبطاقة أو لتوليد رسائل اعتذار وغزل لا نهائية مكتوبة خصيصاً لعيون حلا!
+                </p>
+            </div>
+
+            <!-- Shape Selector Controls -->
+            <div class="flex flex-wrap justify-center gap-2">
+                <button onclick="changeGeneratorShape('shape-rounded', this)" class="shape-btn btn-theme text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-xl transition">
+                    🔲 إطار كلاسيكي
+                </button>
+                <button onclick="changeGeneratorShape('shape-royal', this)" class="shape-btn bg-white/10 hover:bg-white/20 text-xs sm:text-sm font-bold px-4 py-2 rounded-xl transition">
+                    👑 شكل التاج الملكي
+                </button>
+                <button onclick="changeGeneratorShape('shape-cloud', this)" class="shape-btn bg-white/10 hover:bg-white/20 text-xs sm:text-sm font-bold px-4 py-2 rounded-xl transition">
+                    ☁️ شكل الغيمة الحالمة
+                </button>
+                <button onclick="changeGeneratorShape('shape-pill', this)" class="shape-btn bg-white/10 hover:bg-white/20 text-xs sm:text-sm font-bold px-4 py-2 rounded-xl transition">
+                    💊 كبسولة السعادة
+                </button>
+                <button onclick="changeGeneratorShape('shape-octagon', this)" class="shape-btn bg-white/10 hover:bg-white/20 text-xs sm:text-sm font-bold px-4 py-2 rounded-xl transition">
+                    💎 الجوهرة الماسية
+                </button>
+            </div>
+
+            <!-- Dynamic Shape Card -->
+            <div class="max-w-3xl mx-auto">
+                <div id="generator-card" class="glass-card shape-rounded p-8 sm:p-12 text-center space-y-6 transition-all duration-500 relative overflow-hidden">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/15 text-xs font-bold text-amber-300">
+                        <span id="gen-category">رسالة حب واعتذار رقم #1</span>
+                    </div>
+
+                    <div id="gen-icon" class="text-5xl animate-bounce">💖</div>
+
+                    <blockquote id="gen-text" class="text-xl sm:text-3xl font-extrabold leading-relaxed max-w-2xl mx-auto">
+                        "يا حلا، لو كان الاعتذار يُكتب بالنجوم لكتبت اسمكِ في كل سماء.. سامحيني يا أجمل قدر في حياة منار!"
+                    </blockquote>
+
+                    <div class="pt-4 flex flex-wrap justify-center gap-3">
+                        <button onclick="generateNewApology()" class="px-6 py-3.5 rounded-2xl btn-theme text-white font-black text-sm sm:text-base flex items-center gap-2 shadow-xl">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <span>اعتذار جديد وشكل جديد بضغطة زر ✨</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. APOLOGIES IN EVERY LANGUAGE ("بكل اللغات") -->
+        <section id="languages-section" class="space-y-6">
+            <div class="text-center space-y-2">
+                <span class="px-3.5 py-1 rounded-full bg-white/10 text-xs font-bold border border-white/15">القسم الثالث</span>
+                <h2 class="text-2xl sm:text-4xl font-black">اعتذارات لحلا بكل لغات العالم 🌍🗣️</h2>
+                <p class="text-sm sm:text-base opacity-80 max-w-xl mx-auto">
+                    مرّري الماوس أو اضغطي على أي بطاقة لقلبها وقراءة كيف يعتذر منار لحلا بـ 12 لغة عالمية مع طريقة النطق بالعربي!
+                </p>
+            </div>
+
+            <div id="languages-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                <!-- Populated dynamically by JS -->
+            </div>
+        </section>
+
+        <!-- 5. REDEEMABLE PEACE & LOVE COUPONS ("كوبونات الترضية الخاصة بحلا") -->
+        <section id="coupons-section" class="space-y-6">
+            <div class="text-center space-y-2">
+                <span class="px-3.5 py-1 rounded-full bg-white/10 text-xs font-bold border border-white/15">القسم الرابع — هدايا فورية</span>
+                <h2 class="text-2xl sm:text-4xl font-black">كوبونات الترضية والدلال لحلا 🎟️🎁</h2>
+                <p class="text-sm sm:text-base opacity-80 max-w-2xl mx-auto">
+                    لأن الاعتذار بالكلام وحده ما يكفي لحبيبة قلبي حلا.. هذه كوبونات رسمية موقعة من <span class="font-bold text-amber-300">منار</span>، اضغطي على أي كوبون لتفعيله فوراً!
+                </p>
+            </div>
+
+            <div id="coupons-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Populated dynamically by JS -->
+            </div>
+
+            <!-- Copy Claimed Coupons Summary -->
+            <div id="claimed-summary-box" class="hidden glass-card rounded-2xl p-5 max-w-2xl mx-auto text-center space-y-3 border-2 border-emerald-400/50">
+                <p class="font-bold text-emerald-300 text-sm sm:text-base">
+                    ✅ تم تفعيل <span id="claimed-count">0</span> كوبونات لصالح الملكة حلا!
+                </p>
+                <button onclick="copyClaimedCoupons()" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm inline-flex items-center gap-2 transition">
+                    <i class="fa-solid fa-copy"></i>
+                    <span id="copy-coupons-text">نسخ قائمة الكوبونات المختارة لإرسالها لمنار 📋</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- 6. THE ULTIMATE FORGIVENESS CHALLENGE ("اختبار الرضا") -->
+        <section id="forgive-section" class="glass-card rounded-3xl p-8 sm:p-12 text-center space-y-8 relative overflow-hidden border-2 border-white/20">
+            <div class="space-y-3">
+                <span class="px-4 py-1.5 rounded-full bg-amber-400/20 text-amber-300 text-xs sm:text-sm font-extrabold border border-amber-300/30">
+                    اللحظة الحاسمة 💓
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-black">
+                    والآن يا نور عيوني حلا.. هل سامحتيني؟ 🥺❤️
+                </h2>
+                <p class="text-sm sm:text-lg opacity-85 max-w-xl mx-auto">
+                    منار ينتظر الجواب على أحر من الجمر.. جربي تضغطين على "لسه زعلانة" وشوفي شو يصير! 😉
+                </p>
+            </div>
+
+            <!-- Interactive Buttons Arena -->
+            <div id="buttons-arena" class="relative min-h-[180px] flex flex-col sm:flex-row items-center justify-center gap-6 p-4 rounded-2xl bg-black/25 border border-white/10 overflow-hidden">
+                <!-- YES BUTTON -->
+                <button id="yes-forgive-btn" onclick="triggerForgivenessCelebration()" class="px-8 py-4 rounded-2xl btn-theme text-white font-black text-lg sm:text-xl shadow-2xl flex items-center gap-3 z-20 transition-all duration-300">
+                    <i class="fa-solid fa-heart-circle-check text-2xl animate-bounce"></i>
+                    <span id="yes-btn-text">سامحتك يا منار ❤️</span>
+                </button>
+
+                <!-- RUNAWAY NO BUTTON -->
+                <button id="no-forgive-btn" onmouseover="dodgeNoButton()" ontouchstart="dodgeNoButton(event)" onclick="dodgeNoButton(event)" class="px-6 py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/25 text-white/90 font-bold text-sm sm:text-base transition-all duration-200 z-10">
+                    لسه زعلانة 😤
+                </button>
+            </div>
+
+            <p id="dodge-counter-msg" class="text-xs sm:text-sm text-amber-300 font-bold h-5"></p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-10 border-t border-white/10 bg-black/40 backdrop-blur-md py-8 px-4 text-center">
+        <div class="max-w-4xl mx-auto space-y-2">
+            <p class="font-bold text-base sm:text-lg">
+                صُنع بكل حب وشوق واعتذار من <span class="text-amber-300">منار</span> إلى زوجته وحبيبته ونور عيونه <span class="text-rose-400">حلا</span> ❤️
+            </p>
+            <p class="text-xs opacity-65">
+                جميع الحقوق محفوظة لعيون حلا وابتسامتها للأبد ∞
+            </p>
+        </div>
+    </footer>
+
+    <!-- CELEBRATION MODAL -->
+    <div id="celebration-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+        <div class="glass-card rounded-3xl p-6 sm:p-10 max-w-lg w-full text-center space-y-6 border-2 border-amber-300 animate-[stampDown_0.5s_ease_forwards]">
+            <div class="w-20 h-20 mx-auto rounded-full btn-theme flex items-center justify-center text-4xl text-white shadow-2xl animate-heartbeat">
+                👑
+            </div>
+            <h3 class="text-2xl sm:text-4xl font-black text-amber-300">
+                يا فرحة قلبي! رضيت حلا ونوّرت الدنيا! 🎉❤️
+            </h3>
+            <p class="text-base sm:text-lg leading-relaxed opacity-95">
+                يسلملي هالقلب الطيب والحنون يا أغلى زوجة وحبيبة ونور عيوني! أوعدك دايماً أكون سبب ضحكتك وسعادتك يا <strong class="text-rose-300">حلا</strong>.
+            </p>
+            <div class="bg-black/40 p-4 rounded-2xl border border-white/15 text-xs sm:text-sm space-y-1">
+                <p class="font-bold text-emerald-300">🎁 مكافأة الرضا الفورية:</p>
+                <p>تم تفعيل جميع كوبونات الدلال والترضية تلقائياً لعيونك!</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 justify-center pt-2">
+                <button onclick="copyForgivenessMessage()" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm flex items-center justify-center gap-2 transition">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span id="modal-copy-btn">انسخي رسالة الرضا وأرسليها لمنار 💌</span>
+                </button>
+                <button onclick="closeCelebrationModal()" class="px-5 py-3 rounded-xl bg-white/15 hover:bg-white/25 font-bold text-sm transition">
+                    العودة للموقع ✨
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        /* ==========================================
+           1. WEB AUDIO SYNTHESIZER (Pleasant Chimes)
+           ========================================== */
+        let soundEnabled = true;
+        let audioCtx = null;
+
+        function initAudio() {
+            if (!audioCtx) {
+                const AudioContext = window.AudioContext || window.webkitAudioContext;
+                if (AudioContext) audioCtx = new AudioContext();
+            }
+        }
+
+        function playTone(type = 'chime') {
+            if (!soundEnabled) return;
+            try {
+                initAudio();
+                if (!audioCtx) return;
+                if (audioCtx.state === 'suspended') audioCtx.resume();
+
+                const now = audioCtx.currentTime;
+                if (type === 'chime') {
+                    const freqs = [523.25, 659.25, 783.99]; // C5, E5, G5
+                    freqs.forEach((f, idx) => {
+                        const osc = audioCtx.createOscillator();
+                        const gain = audioCtx.createGain();
+                        osc.type = 'sine';
+                        osc.frequency.setValueAtTime(f, now + idx * 0.06);
+                        gain.gain.setValueAtTime(0.08, now + idx * 0.06);
+                        gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.06 + 0.35);
+                        osc.connect(gain);
+                        gain.connect(audioCtx.destination);
+                        osc.start(now + idx * 0.06);
+                        osc.stop(now + idx * 0.06 + 0.36);
+                    });
+                } else if (type === 'celebrate') {
+                    const notes = [523.25, 659.25, 783.99, 1046.50];
+                    notes.forEach((f, idx) => {
+                        const osc = audioCtx.createOscillator();
+                        const gain = audioCtx.createGain();
+                        osc.type = 'triangle';
+                        osc.frequency.setValueAtTime(f, now + idx * 0.09);
+                        gain.gain.setValueAtTime(0.12, now + idx * 0.09);
+                        gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.09 + 0.55);
+                        osc.connect(gain);
+                        gain.connect(audioCtx.destination);
+                        osc.start(now + idx * 0.09);
+                        osc.stop(now + idx * 0.09 + 0.56);
+                    });
+                } else if (type === 'dodge') {
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(300, now);
+                    osc.frequency.exponentialRampToValueAtTime(600, now + 0.12);
+                    gain.gain.setValueAtTime(0.07, now);
+                    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.13);
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.start(now);
+                    osc.stop(now + 0.14);
+                }
+            } catch (e) {
+                // Ignore audio errors on restricted devices
+            }
+        }
+
+        function toggleSound() {
+            soundEnabled = !soundEnabled;
+            const icon = document.getElementById('sound-icon');
+            if (soundEnabled) {
+                icon.className = 'fa-solid fa-volume-high text-sm';
+                playTone('chime');
+            } else {
+                icon.className = 'fa-solid fa-volume-xmark text-sm opacity-60';
+            }
+        }
+
+        /* ==========================================
+           2. THEME & COLOR SWITCHER ("بكل الألوان")
+           ========================================== */
+        let currentThemeColor = '#f43f5e';
+        const themeMap = {
+            rose: '#f43f5e',
+            purple: '#a855f7',
+            gold: '#f59e0b',
+            ocean: '#06b6d4',
+            emerald: '#10b981'
+        };
+
+        function setTheme(themeName) {
+            document.body.setAttribute('data-theme', themeName);
+            currentThemeColor = themeMap[themeName] || '#f43f5e';
+            playTone('chime');
+
+            document.querySelectorAll('.theme-btn').forEach(btn => {
+                if (btn.getAttribute('data-t') === themeName) {
+                    btn.classList.add('border-white', 'scale-110');
+                    btn.classList.remove('border-transparent');
+                    btn.innerHTML = '<i class="fa-solid fa-check text-[10px] text-white"></i>';
+                } else {
+                    btn.classList.remove('border-white', 'scale-110');
+                    btn.classList.add('border-transparent');
+                    btn.innerHTML = '';
+                }
+            });
+        }
+
+        /* ==========================================
+           3. HERO LOVE METER BOOST
+           ========================================== */
+        let meterBoostStage = 0;
+        const meterStages = [
+            { val: "5000% 🚀", note: "وصلنا الفضاء الخارجي بحب حلا ونور عيونها!" },
+            { val: "1,000,000% 🌟", note: "انفجر مقياس الغلاوة! لا يوجد رقم يكفي لوصف غلاوة حلا عند منار!" },
+            { val: "∞ ما لا نهاية ❤️", note: "حب أبدي لا نهائي.. زعلك مرفوض دولياً وعاطفياً يا حلا!" }
+        ];
+
+        function boostLoveMeter() {
+            playTone('celebrate');
+            const stage = meterStages[meterBoostStage % meterStages.length];
+            document.getElementById('love-meter-value').textContent = stage.val;
+            document.getElementById('love-meter-note').textContent = stage.note;
+            meterBoostStage++;
+            spawnBurstHearts(18);
+        }
+
+        /* ==========================================
+           4. STYLE TABS ("بكل الأساليب")
+           ========================================== */
+        function switchStyleTab(tabName) {
+            playTone('chime');
+            document.querySelectorAll('.style-tab-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById('tab-content-' + tabName).classList.remove('hidden');
+
+            document.querySelectorAll('.style-tab-btn').forEach(btn => {
+                btn.classList.remove('btn-theme', 'text-white');
+                btn.classList.add('bg-white/5');
+            });
+
+            const activeBtn = document.getElementById('tab-btn-' + tabName);
+            activeBtn.classList.remove('bg-white/5');
+            activeBtn.classList.add('btn-theme', 'text-white');
+        }
+
+        function openSecretEnvelope() {
+            playTone('celebrate');
+            document.getElementById('envelope-closed').classList.add('hidden');
+            document.getElementById('envelope-opened').classList.remove('hidden');
+            spawnBurstHearts(15);
+        }
+
+        let isSunnyWeather = false;
+        function toggleWeatherMood() {
+            playTone('chime');
+            isSunnyWeather = !isSunnyWeather;
+            const badge = document.getElementById('weather-badge');
+            const icon = document.getElementById('weather-icon');
+            const temp = document.getElementById('weather-temp');
+            const desc = document.getElementById('weather-desc');
+            const btnText = document.getElementById('weather-btn-text');
+
+            if (isSunnyWeather) {
+                badge.textContent = 'بعد ابتسامة حلا ☀️🌸';
+                badge.className = 'px-3 py-1 rounded-full bg-amber-500/30 border border-amber-400/40 text-xs font-bold text-amber-200';
+                icon.textContent = '☀️🌈🌷';
+                temp.textContent = '25° ربيع دائم ومشرق';
+                temp.className = 'text-2xl font-black text-amber-300';
+                desc.innerHTML = 'أشرقت شمس السعادة في قلب منار، وتفتحت كل الورود بمجرد ما ابتسمت <strong class="text-amber-300">نور عيوني حلا</strong>!';
+                btnText.textContent = 'إعادة عرض حالة الطقس قبل الابتسامة 🌧️';
+                spawnBurstHearts(12);
+            } else {
+                badge.textContent = 'بدون رضا حلا 🌧️';
+                badge.className = 'px-3 py-1 rounded-full bg-blue-500/30 border border-blue-400/40 text-xs font-bold';
+                icon.textContent = '⛈️🥶';
+                temp.textContent = '-50° تحت الصفر';
+                temp.className = 'text-2xl font-black text-cyan-300';
+                desc.innerHTML = 'غائم كلياً، عواصف شوق عاتية، وأمطار غزيرة من الندم.. ولا يمكن أن تشرق الشمس إلا بابتسامة واحدة من ثغر <strong class="text-amber-300">حلا</strong>!';
+                btnText.textContent = 'اضغطي هنا لترين الطقس لما تبتسمين يا حلا ☀️';
+            }
+        }
+
+        function runApologyCode() {
+            playTone('celebrate');
+            const out = document.getElementById('terminal-output');
+            const badge = document.getElementById('terminal-status-badge');
+            const btn = document.getElementById('run-code-btn');
+
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> <span>جاري تنفيذ الكود لعيون حلا...</span>';
+
+            out.innerHTML = `<p class="text-cyan-300">&gt; Executing patch: Apologize_To_Hala.js ...</p>`;
+
+            const steps = [
+                `<p class="text-amber-200">&gt; const wife = "Hala (نور عيوني)";</p>`,
+                `<p class="text-pink-300">&gt; while (Manar.isAlive()) { Manar.love(Hala); Manar.makeHerSmile(); }</p>`,
+                `<p class="text-emerald-400 font-bold">✅ [STATUS 200 OK]: Apology Accepted! Hala is the Queen of Manar's Heart Forever ❤️</p>`
+            ];
+
+            steps.forEach((line, index) => {
+                setTimeout(() => {
+                    out.innerHTML += line;
+                    if (index === steps.length - 1) {
+                        badge.textContent = '200 OK ❤️';
+                        badge.className = 'px-2.5 py-0.5 rounded text-xs font-code bg-emerald-500/20 text-emerald-400 border border-emerald-500/30';
+                        btn.innerHTML = '<i class="fa-solid fa-check-double"></i> <span>تم إصلاح الخطأ بنجاح لعيون حلا!</span>';
+                        spawnBurstHearts(15);
+                    }
+                }, (index + 1) * 650);
+            });
+        }
+
+        function applyRoyalStamp() {
+            playTone('celebrate');
+            const stampBox = document.getElementById('royal-stamp-box');
+            const stampBtn = document.getElementById('stamp-btn');
+            stampBtn.classList.add('hidden');
+            stampBox.classList.remove('hidden');
+            stampBox.classList.add('stamp-active');
+            spawnBurstHearts(20);
+        }
+
+        /* ==========================================
+           5. ENDLESS APOLOGY GENERATOR & SHAPES
+           ========================================== */
+        const apologiesList = [
+            { icon: "💖", cat: "غزل واعتذار رومانسي", text: "يا حلا، لو كان الاعتذار يُكتب بالنجوم لكتبت اسمكِ في كل سماء.. سامحيني يا أجمل قدر في حياة منار!" },
+            { icon: "👑", cat: "اعتراف ملكي", text: "أعترف رسمياً أني بدون رضاكِ يا حلا مثل مملكة بلا تاج، ومثل صباح بلا شمس.. حقك على عيوني يا نور عيوني!" },
+            { icon: "🌹", cat: "باقة ورد إلكترونية", text: "ألف وردة جورية تنحني خجلاً أمام جمال عيونك يا حلا، وتقول لكِ بالنيابة عن منار: آسف يا أغلى البشر!" },
+            { icon: "☕", cat: "وعد دافئ", text: "قهوتي مرّة بدون ضحكتك، وأيامي ناقصة بدون سواليفك الحلوة.. ارضي عني يا حلا الدنيا كلها!" },
+            { icon: "🌙", cat: "همسة ليلية", text: "سألت القمر عن سبب غيابه، قال: أستحي أطلع وحبيبة قلبك حلا زعلانة! ابتسمي خلي الليل ينوّر يا عمري." },
+            { icon: "💎", cat: "جوهرة العمر", text: "الذهب يرخص والماس يتكسر، إلا غلاوة حلا في قلب منار تزيد كل يوم ألف مرة.. سامحيني يا روحي!" },
+            { icon: "🕊️", cat: "حمامة السلام", text: "أرسلت لكِ سرب حمام أبيض يحمل قلبي بين جناحيه ويقول: ما عاش اللي يزعل نور عيوني حلا!" },
+            { icon: "🍫", cat: "حلاوة الدنيا", text: "اسمك (حلا) وأنتِ كل الحلا في دنيتي.. مستحيل أتحمل مرارة زعلك لو دقيقة واحدة!" }
+        ];
+
+        const shapeClasses = ['shape-rounded', 'shape-royal', 'shape-cloud', 'shape-pill', 'shape-octagon'];
+        let currentApologyIndex = 0;
+
+        function changeGeneratorShape(shapeClass, btnEl) {
+            playTone('chime');
+            const card = document.getElementById('generator-card');
+            shapeClasses.forEach(c => card.classList.remove(c));
+            card.classList.add(shapeClass);
+
+            if (btnEl) {
+                document.querySelectorAll('.shape-btn').forEach(b => {
+                    b.classList.remove('btn-theme', 'text-white');
+                    b.classList.add('bg-white/10');
+                });
+                btnEl.classList.remove('bg-white/10');
+                btnEl.classList.add('btn-theme', 'text-white');
+            }
+        }
+
+        function generateNewApology() {
+            playTone('chime');
+            currentApologyIndex = (currentApologyIndex + 1) % apologiesList.length;
+            const item = apologiesList[currentApologyIndex];
+
+            const card = document.getElementById('generator-card');
+            const randomShape = shapeClasses[currentApologyIndex % shapeClasses.length];
+            shapeClasses.forEach(c => card.classList.remove(c));
+            card.classList.add(randomShape);
+
+            document.getElementById('gen-icon').textContent = item.icon;
+            document.getElementById('gen-category').textContent = `${item.cat} #${currentApologyIndex + 1}`;
+            document.getElementById('gen-text').textContent = `"${item.text}"`;
+            spawnBurstHearts(8);
+        }
+
+        /* ==========================================
+           6. APOLOGIES IN 12 LANGUAGES ("بكل اللغات")
+           ========================================== */
+        const languagesData = [
+            {
+                lang: "العربية الفصحى",
+                badge: "🇸🇦 🇸🇾 لغة الضاد",
+                phrase: "أعتذر منكِ يا حلا، أحبكِ يا نور عيوني",
+                pronounce: "النطق: بلسان القلب النابض بحبك",
+                meaning: "أنتِ كل حياتي وسعادتي يا حلا"
+            },
+            {
+                lang: "الإنجليزية (English)",
+                badge: "🇬🇧 🇺🇸 English",
+                phrase: "I am so sorry Hala, I love you endlessly!",
+                pronounce: "آي آم سو سوري حلا، آي لوف يو إندليسلي",
+                meaning: "أنا آسف جداً يا حلا، أحبكِ بلا نهاية"
+            },
+            {
+                lang: "الفرنسية (Français)",
+                badge: "🇫🇷 Français",
+                phrase: "Pardonne-moi ma chérie Hala, je t'aime !",
+                pronounce: "باردون موا ما شيري حلا، جو تيم",
+                meaning: "سامحيني يا عزيزتي حلا، أنا أحبكِ"
+            },
+            {
+                lang: "التركية (Türkçe)",
+                badge: "🇹🇷 Türkçe",
+                phrase: "Özür dilerim canım Hala, seni çok seviyorum!",
+                pronounce: "أوزور ديليريم جانم حلا، سيني تشوك سفيوروم",
+                meaning: "أعتذر منكِ يا روحي حلا، أحبكِ كثيراً جداً"
+            },
+            {
+                lang: "الإسبانية (Español)",
+                badge: "🇪🇸 Español",
+                phrase: "¡Perdóname mi amor Hala, te amo mucho!",
+                pronounce: "بيردونامي مي أمور حلا، تي آمو موتشو",
+                meaning: "سامحيني يا حبي حلا، أعشقكِ كثيراً"
+            },
+            {
+                lang: "الإيطالية (Italiano)",
+                badge: "🇮🇹 Italiano",
+                phrase: "Mi dispiace vita mia Hala, ti amo!",
+                pronounce: "مي ديسبياتشي فيتا ميا حلا، تي آمو",
+                meaning: "أنا آسف يا حياتي حلا، أحبكِ"
+            },
+            {
+                lang: "اليابانية (日本語)",
+                badge: "🇯🇵 Japanese",
+                phrase: "ごめんなさい ハラ、愛してる (Gomen'nasai Hala, Aishiteru)",
+                pronounce: "غوميناساي حلا، آيشتيرو",
+                meaning: "أعتذر بشدة يا حلا، أحبكِ من أعماقي"
+            },
+            {
+                lang: "الكورية (한국어)",
+                badge: "🇰🇷 Korean",
+                phrase: "미안해 할라, 사랑해 (Mianhae Hala, Saranghae)",
+                pronounce: "ميانيه حلا، سارانغهي",
+                meaning: "آسف يا حلا، أحبكِ جداً"
+            },
+            {
+                lang: "الألمانية (Deutsch)",
+                badge: "🇩🇪 Deutsch",
+                phrase: "Es tut mir leid mein Schatz Hala, ich liebe dich!",
+                pronounce: "إس توت مير لايد ماين شاتز حلا، إيش ليبي ديش",
+                meaning: "أنا آسف يا كنزي الغالي حلا، أحبكِ"
+            },
+            {
+                lang: "الروسية (Русский)",
+                badge: "🇷🇺 Russian",
+                phrase: "Прости меня Хала, я тебя люблю!",
+                pronounce: "براستي مينيا حلا، يا تيبيا لوبلو",
+                meaning: "سامحيني يا حلا، أنا أحبكِ"
+            },
+            {
+                lang: "الهندية (हिन्दी)",
+                badge: "🇮🇳 Hindi",
+                phrase: "मुझे माफ़ कर दो हला, मैं तुमसे प्यार करता हूँ",
+                pronounce: "موجي ماف كاردو حلا، ماين تومسي بيار كارتا هون",
+                meaning: "سامحيني يا حلا، أنا مغرم بكِ"
+            },
+            {
+                lang: "اليونانية (Ελληνικά)",
+                badge: "🇬🇷 Greek",
+                phrase: "Συγγνώμη αγάπη μου Χάλα, σ' αγαπώ!",
+                pronounce: "سيغنومي أغابي مو حلا، ساغابو",
+                meaning: "عفواً يا حبيبتي حلا، أحبكِ"
+            }
+        ];
+
+        function renderLanguagesGrid() {
+            const container = document.getElementById('languages-grid');
+            container.innerHTML = languagesData.map((item, idx) => `
+                <div class="flip-card cursor-pointer" onclick="this.classList.toggle('flipped'); playTone('chime');">
+                    <div class="flip-card-inner">
+                        <!-- Front -->
+                        <div class="flip-card-front space-y-3">
+                            <span class="px-3 py-1 rounded-full bg-white/10 text-xs font-bold border border-white/15">${item.badge}</span>
+                            <h3 class="text-lg font-extrabold text-amber-300">${item.lang}</h3>
+                            <p class="text-sm font-bold leading-relaxed px-2">${item.phrase}</p>
+                            <span class="text-[11px] opacity-65 flex items-center gap-1 pt-2">
+                                <i class="fa-solid fa-rotate"></i> اضغطي لطريقة النطق والمعنى
+                            </span>
+                        </div>
+                        <!-- Back -->
+                        <div class="flip-card-back space-y-2.5">
+                            <span class="text-xs font-bold bg-black/25 px-3 py-1 rounded-full">🗣️ النطق بالعربي:</span>
+                            <p class="text-sm font-black leading-snug text-amber-200">"${item.pronounce}"</p>
+                            <div class="w-12 h-0.5 bg-white/30 my-1"></div>
+                            <p class="text-xs opacity-95">💖 المعنى: ${item.meaning}</p>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        /* ==========================================
+           7. REDEEMABLE COUPONS ("كوبونات الترضية")
+           ========================================== */
+        const couponsData = [
+            {
+                id: 1,
+                icon: "🍽️",
+                title: "عزيمة عشاء فاخرة على ذوقك",
+                desc: "تختار حلا المطعم أو الأكلة اللي تشتهيها في أي وقت، والتنفيذ فوري!",
+                claimed: false
+            },
+            {
+                id: 2,
+                icon: "👑",
+                title: "طلباتك أوامر لمدة 24 ساعة",
+                desc: "يوم كامل من الدلال الملكي.. كل طلبات الملكة حلا مجابة بكلمة (حاضر ومن عيوني).",
+                claimed: false
+            },
+            {
+                id: 3,
+                icon: "☕🍰",
+                title: "مشوارك المفضل مع قهوة وحلا",
+                desc: "طلعة رايقة مع أحلى قهوة وحلا لأحلى حلا في الكون لتعديل المزاج.",
+                claimed: false
+            },
+            {
+                id: 4,
+                icon: "🎁",
+                title: "حضن طويل وهدية مفاجئة",
+                desc: "كوبون خاص يضمن لكِ هدية حلوة تليق بجمال عيونك وقلبك الطيب.",
+                claimed: false
+            },
+            {
+                id: 5,
+                icon: "🃏",
+                title: "كرت الجوكر الذهبي",
+                desc: "صلاحية مطلقة لإنهاء أي نقاش مستقبلي لصالح حلا فوراً بدون أي جدال!",
+                claimed: false
+            },
+            {
+                id: 6,
+                icon: "🎬🍿",
+                title: "سهرة سينمائية على اختيارك",
+                desc: "الفيلم، المسلسل، والسناكس كلها من اختيار حلا، ومنار عليه التحضير والخدمة!",
+                claimed: false
+            }
+        ];
+
+        function renderCoupons() {
+            const grid = document.getElementById('coupons-grid');
+            grid.innerHTML = couponsData.map(coupon => `
+                <div onclick="claimCoupon(${coupon.id})" class="glass-card rounded-3xl p-6 cursor-pointer relative overflow-hidden border-2 ${coupon.claimed ? 'border-emerald-400 bg-emerald-950/40' : 'border-dashed border-white/25'} flex flex-col justify-between transition-all hover:scale-[1.02]">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-4xl">${coupon.icon}</span>
+                            <span class="px-3 py-1 rounded-full text-xs font-extrabold ${coupon.claimed ? 'bg-emerald-500 text-white' : 'bg-white/10 text-amber-300 border border-white/15'}">
+                                ${coupon.claimed ? '✅ تم التفعيل بنجاح' : '🎟️ صالح للاستخدام الفوري'}
+                            </span>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-black mb-2">${coupon.title}</h3>
+                        <p class="text-xs sm:text-sm opacity-85 leading-relaxed">${coupon.desc}</p>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-white/10 flex items-center justify-between">
+                        <span class="text-xs opacity-70">مُوقّع من: منار ❤️</span>
+                        <span class="text-xs font-bold ${coupon.claimed ? 'text-emerald-300' : 'text-pink-300 underline'}">
+                            ${coupon.claimed ? 'مُفعّل لعيون حلا 🎉' : 'اضغطي لتفعيل الكوبون 👈'}
+                        </span>
+                    </div>
+                </div>
+            `).join('');
+
+            const claimedCount = couponsData.filter(c => c.claimed).length;
+            const summaryBox = document.getElementById('claimed-summary-box');
+            if (claimedCount > 0) {
+                summaryBox.classList.remove('hidden');
+                document.getElementById('claimed-count').textContent = claimedCount;
+            } else {
+                summaryBox.classList.add('hidden');
+            }
+        }
+
+        function claimCoupon(id) {
+            const coupon = couponsData.find(c => c.id === id);
+            if (coupon) {
+                coupon.claimed = !coupon.claimed;
+                playTone(coupon.claimed ? 'celebrate' : 'chime');
+                if (coupon.claimed) spawnBurstHearts(10);
+                renderCoupons();
+            }
+        }
+
+        function copyClaimedCoupons() {
+            const claimedList = couponsData.filter(c => c.claimed).map(c => `- ${c.title} ${c.icon}`).join('\n');
+            const message = `حبيبي منار ❤️\nقبلت اعتذارك الحلو، وفعّلت هذه الكوبونات الرسمية من الموقع:\n${claimedList}\nجاهز للتنفيذ؟ 😉👑`;
+            copyTextToClipboard(message, 'copy-coupons-text', 'تم نسخ الكوبونات بنجاح! أرسليها لمنار ❤️');
+        }
+
+        /* ==========================================
+           8. FORGIVENESS CHALLENGE ("اختبار الرضا")
+           ========================================== */
+        let dodgeCount = 0;
+        const dodgeTexts = [
+            "ما يشتغل هالزر يا حلا! 😜",
+            "السيستم يرفض زعل نور عيوني! 🚫",
+            "حاولي مرة ثانية.. الزر هرب! 🏃‍♂️💨",
+            "عشان خاطر منار اضغطي الزر الثاني! 🥺❤️",
+            "تم تعطيل الزعل بأمر ملكي! 👑",
+            "مستحيل أخليكِ تضغطين هنا! 😂💖"
+        ];
+
+        function dodgeNoButton(e) {
+            if (e) e.preventDefault();
+            playTone('dodge');
+            dodgeCount++;
+
+            const noBtn = document.getElementById('no-forgive-btn');
+            const yesBtn = document.getElementById('yes-forgive-btn');
+            const arena = document.getElementById('buttons-arena');
+            const msg = document.getElementById('dodge-counter-msg');
+
+            // Update funny text
+            noBtn.textContent = dodgeTexts[dodgeCount % dodgeTexts.length];
+            msg.textContent = `محاولات الهروب من المصالحة: ${dodgeCount} 😂 — اضغطي على "سامحتك يا منار ❤️"!`;
+
+            // Move the No button safely inside the arena
+            const maxX = Math.max(40, (arena.clientWidth / 2) - 90);
+            const maxY = 45;
+            const randX = (Math.random() * 2 - 1) * maxX;
+            const randY = (Math.random() * 2 - 1) * maxY;
+            noBtn.style.transform = `translate(${randX}px, ${randY}px) scale(${Math.max(0.75, 1 - dodgeCount * 0.04)})`;
+
+            // Grow the Yes button
+            const scaleVal = Math.min(1.35, 1 + dodgeCount * 0.06);
+            yesBtn.style.transform = `scale(${scaleVal})`;
+        }
+
+        function triggerForgivenessCelebration() {
+            playTone('celebrate');
+            // Claim all coupons automatically as a reward!
+            couponsData.forEach(c => c.claimed = true);
+            renderCoupons();
+
+            // Show Modal
+            const modal = document.getElementById('celebration-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+
+            // Big heart & confetti explosion
+            spawnBurstHearts(45);
+        }
+
+        function closeCelebrationModal() {
+            const modal = document.getElementById('celebration-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function copyForgivenessMessage() {
+            const text = "سامحتك يا منار ❤️ موقع الاعتذار يجنن وضحكني وفرح قلبي.. يلا جهز كوبونات الترضية كلها! 👑🥰";
+            copyTextToClipboard(text, 'modal-copy-btn', 'تم نسخ الرسالة! أرسليها لمنار بالواتساب ❤️');
+        }
+
+        function copyTextToClipboard(text, elementId, successText) {
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            const el = document.getElementById(elementId);
+            if (el) {
+                const orig = el.textContent;
+                el.textContent = successText;
+                setTimeout(() => { el.textContent = orig; }, 3500);
+            }
+        }
+
+        /* ==========================================
+           9. BACKGROUND PARTICLES & BURST HEARTS CANVAS
+           ========================================== */
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let burstParticles = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        function initParticles() {
+            particles = [];
+            const count = Math.min(35, Math.floor(window.innerWidth / 35));
+            const symbols = ['❤️', '✨', '🌸', '💖', '⭐'];
+            for (let i = 0; i < count; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    size: Math.random() * 14 + 10,
+                    speedY: Math.random() * 0.6 + 0.25,
+                    speedX: (Math.random() - 0.5) * 0.4,
+                    opacity: Math.random() * 0.45 + 0.15,
+                    symbol: symbols[Math.floor(Math.random() * symbols.length)]
+                });
+            }
+        }
+
+        function spawnBurstHearts(amount = 20) {
+            const symbols = ['❤️', '💖', '👑', '✨', '🌷', '🎉'];
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            for (let i = 0; i < amount; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                const speed = Math.random() * 7 + 2;
+                burstParticles.push({
+                    x: centerX,
+                    y: centerY,
+                    vx: Math.cos(angle) * speed,
+                    vy: Math.sin(angle) * speed - 2,
+                    gravity: 0.12,
+                    size: Math.random() * 18 + 14,
+                    alpha: 1,
+                    symbol: symbols[Math.floor(Math.random() * symbols.length)]
+                });
+            }
+        }
+
+        function animateCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Ambient floating particles
+            particles.forEach(p => {
+                p.y -= p.speedY;
+                p.x += p.speedX;
+                if (p.y < -30) {
+                    p.y = canvas.height + 20;
+                    p.x = Math.random() * canvas.width;
+                }
+                ctx.save();
+                ctx.globalAlpha = p.opacity;
+                ctx.font = `${p.size}px sans-serif`;
+                ctx.fillText(p.symbol, p.x, p.y);
+                ctx.restore();
+            });
+
+            // Celebratory burst particles
+            for (let i = burstParticles.length - 1; i >= 0; i--) {
+                const bp = burstParticles[i];
+                bp.x += bp.vx;
+                bp.y += bp.vy;
+                bp.vy += bp.gravity;
+                bp.alpha -= 0.014;
+
+                if (bp.alpha <= 0) {
+                    burstParticles.splice(i, 1);
+                    continue;
+                }
+
+                ctx.save();
+                ctx.globalAlpha = Math.max(0, bp.alpha);
+                ctx.font = `${bp.size}px sans-serif`;
+                ctx.fillText(bp.symbol, bp.x, bp.y);
+                ctx.restore();
+            }
+
+            requestAnimationFrame(animateCanvas);
+        }
+
+        window.onload = function () {
+            resizeCanvas();
+            initParticles();
+            renderLanguagesGrid();
+            renderCoupons();
+            animateCanvas();
+            window.addEventListener('resize', () => {
+                resizeCanvas();
+                initParticles();
+            });
+        };
+    </script>
+</body>
+</html>
